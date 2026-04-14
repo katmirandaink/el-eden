@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...el Edén...</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <img src="Images/NanaDesign_Couch.png"></img>
+
+    <h1>...porque el campo es el Edén...</h1>
+
+    <h2>...and its history is timeless...</h2>
+
+    <img src="Images/KatsLabIcon.png" class="spin-image">
+
+
+ <svg viewBox="0 0 500 500">
+    <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+    <text width="500">
+      <textPath xlink:href="#curve">
+       ...porque el campo es el Edén...
+      </textPath>
+    </text>
+  </svg>
+
+
+  </body>
+
+  
+
+</html>
+
+
+<style>
+
+body{ 
+
+    background-color: #010760;
+
+    .spin-image {
+  transition: transform 0.7s ease-in-out;
+  /* Adds depth to the 3D rotation */
+  perspective: 1000px; 
+}
+
+.spin-image:hover {
+  /* Flips the image horizontally */
+  transform: rotateY(360deg); 
+}
+
+font-size: 20px;
+
+}
+
+path {
+  fill: transparent;
+}
+
+body{
+  text-align:center;
+;
+}
+h1{
+  font-size:3rem;
+  margin-top:45vh;
+  color:white;
+  font-family: 'Merienda', cursive;
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+}
+
+</style> 

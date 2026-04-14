@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>...el Edén...</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <img src="Images/"></img>
+    <img src="Images/NanaDesign_Couch.png"></img>
 
     <h1>...porque el campo es el Edén...</h1>
 
     <h2>...and its history is timeless...</h2>
+
+    <img src="Images/KatsLabIcon.png" class="spin-image">
+
+    <img src="Images/NanaStatue.png"></img>
+    <img src="Images/NanaStatueReversed.png"></img>
 
   </body>
 
@@ -24,7 +29,20 @@
 
 body{ 
 
-    background-color: #020476;
+    background-color: #010760;
+
+    .spin-image {
+  transition: transform 0.7s ease-in-out;
+  /* Adds depth to the 3D rotation */
+  perspective: 1000px; 
+}
+
+.spin-image:hover {
+  /* Flips the image horizontally */
+  transform: rotateY(360deg); 
+}
+
+
 
 }
 
