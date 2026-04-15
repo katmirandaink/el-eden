@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>...el Edén...</title>
+
+<!--you can make a style sheet by adding a seperate page style.css and creating a set of rules that all your pages have to follow;
+it activates through this link below; if all you rpages have this link (style sheet) in your boilerplate it will follow those rules-->
     <link rel="stylesheet" href="style.css">
+
+<!--this is a source code from google fonts that you copied the embded code-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
   </head>
+
+
   <body>
 
-    <img src="Images/NanaDesign_Couch.png"></img>
+    <img src="Images/NanaDesign_Couch.png" 
+         width: 100%>
+        </img>
+
 
     <h1>...porque el campo es el Edén...</h1>
 
     <h2>...and its history is timeless...</h2>
 
-    <img src="Images/KatsLabIcon.png" class="spin-image">
+  <a href="altar-link-1-copyforclass.html">
+    <img src="Images/KatsLabIcon.png" class="spin-image"> 
+    </a>
 
     <img src="Images/NanaStatue.png"></img>
     <img src="Images/NanaStatueReversed.png"></img>
@@ -43,6 +59,54 @@ body{
 }
 
 
+
+}
+
+h1{ 
+
+  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250px;
+  text-align: center
+  
+}
+
+h1{
+  color: lightblue;
+  animation-name:glow; 
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+}
+
+/* h1{
+  font-size:3rem;
+  margin-top:45vh;
+  color:white;
+  font-family: 'Merienda', cursive;
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+} */
+
+h2{ 
+
+  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px
 
 }
 

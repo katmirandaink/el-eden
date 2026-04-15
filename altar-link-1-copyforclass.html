@@ -11,11 +11,15 @@
   
     <p>...do you hear them?...</p>
 
-    <video controls width="4500" controls autoplay loop muted>
+    <video controls 
+        width: 100vw
+        height: auto; controls autoplay loop muted>
 
       <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
 
     </video>
+
+    <!--This is an example of a comment for your code. below are your images-->
 
     <img src="Images/IglesiaCuidadDelGranRey_Stars.png"></img>
 
@@ -27,7 +31,14 @@
 
     <img src="Images/Wish 1.png"></img>
 
+<!--if you wanted to change the sizing of the image you can do img { width: xyz height:xyz}-->
+<!--if you want to change positioning you will need to choose between things like relative, fixed, sticky etc
+relative means that you are changing the postion of the default relative position (it starts here but I want it
+20 px to the right etc) instead of using pixels you can use vh or vw (viewpoint height and width)
 
+you can also do fixed position: fixed and keep the image in one place no matter where you scroll
+
+you can also do absolute but that's the trickiest-->
 
   </body>
 
@@ -43,6 +54,12 @@ body{
 
 }
 
+/*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within this grouping*/
+
+p{
+    font-family: 'Franklin Gothic Medium';
+    font-size: xx-large;
+}
 
 
 
