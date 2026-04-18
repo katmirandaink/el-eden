@@ -6,10 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>...welcome...</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
   </head>
   <body>
   
-    <p>...do you hear them?...</p>
+    <div> 
+
+      <p1>...do you hear them?...</p1>
+      <p2>...when my mother speaks to me</p2> 
+      <p3> I hear voices that echo through time...</p3>
+
+    </div>
 
     <video  
     
@@ -21,24 +32,22 @@
 
     <!--This is an example of a comment for your code. below are your images-->
 
-    <img src="Images/IglesiaCuidadDelGranRey_Stars.png"></img>
+    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline"></img>
 
-    <img src="Images/SoundviewWeeds_Fall_2025_I_37.jpg"></img>
+    <img src="Images/SoundviewWeeds_Fall_2025_I_37.jpg" class="mugwort"></img>
 
-    <img src="Images/NanaHouse_December2025_1.jpg"></img>
+    <img src="Images/NanaHouse_December2025_1.jpg" class="nanacouch"></img>
 
-    <img src="Images/NanaDesign_Door_1.png"></img>
+    <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
 
-    <img src="Images/Wish 1.png"></img>
+    <img src="Images/Wish 1.png" class="wish"></img>
 
 <!--if you wanted to change the sizing of the image you can do img { width: xyz height:xyz}-->
-<!--if you want to change positioning you will need to choose between things like relative, fixed, sticky etc
-relative means that you are changing the postion of the default relative position (it starts here but I want it
-20 px to the right etc) instead of using pixels you can use vh or vw (viewpoint height and width)
-
-you can also do fixed position: fixed and keep the image in one place no matter where you scroll
-
-you can also do absolute but that's the trickiest-->
+<!--if you want to change positioning you will need to choose between things like relative, fixed, 
+sticky etc. relative means that you are changing the postion of the default relative position 
+(it starts here but I want it 20 px to the right etc) instead of using pixels you can use vh or vw 
+(viewpoint height and width)you can also do fixed position: fixed and keep the image in one place 
+no matter where you scroll you can also do absolute but that's the trickiest-->
 
   </body>
 
@@ -50,20 +59,60 @@ body{
 
     background-color: #010760;
 
+    .spaceoutline {
+      position: relative;
+
+    }
+    
+    .nanadoor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Offsets the image by half its own width/height */
+  height: 3650px;
+  width: auto;
+  filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+  z-index: 1000; /* Keeps it above other content */
+    }
+
+
+
+
+
+
+  } 
   
 
+
+/*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
+this grouping*/
+
+div{
+  position: fixed; 
+  bottom: 20px;
+  font-family: "Macondo Swash Caps", cursive
+}
+p1{
+    font-size: 2.5vw;
 }
 
-/*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within this grouping*/
+p2{
+    font-size: 3vw;
+}
 
-p{
-    font-family: 'Franklin Gothic Medium';
-    font-size: xx-large;
+p3{
+    font-size: 3vw;
 }
 
 video{ 
     width: 100vw;
     height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Optional: ensures it spans the full width */
+
 }
 
 </style> 

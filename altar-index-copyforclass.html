@@ -20,21 +20,22 @@ it activates through this link below; if all you rpages have this link (style sh
 
   <body>
 
-    <img src="Images/NanaDesign_Couch.png" 
-         width: 100%>
-        </img>
+    <img src="Images/NanaDesign_Couch.png" class="nanacouch"></img>
 
+    <div> 
+       <h1>...porque el campo es el Edén...</h1>
 
-    <h1>...porque el campo es el Edén...</h1>
+       <h2>...and its history is timeless...</h2>
 
-    <h2>...and its history is timeless...</h2>
+    </div>
 
   <a href="altar-link-1-copyforclass.html">
     <img src="Images/KatsLabIcon.png" class="spin-image"> 
     </a>
 
-    <img src="Images/NanaStatue.png"></img>
-    <img src="Images/NanaStatueReversed.png"></img>
+    <img src="Images/NanaStatue.png" class="statue1"></img>
+
+    <img src="Images/NanaStatueReversed.png" class="statue2"></img>
 
   </body>
 
@@ -48,7 +49,7 @@ body{
     background-color: #010760;
 
     .spin-image {
-  transition: transform 0.7s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   /* Adds depth to the 3D rotation */
   perspective: 1000px; 
 }
@@ -58,31 +59,66 @@ body{
   transform: rotateY(360deg); 
 }
 
+.spin-image{
+position: relative;
+top:-1000px;
+left:2500px;
+}
 
+.nanacouch{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Optional: ensures it spans the full width */
+  z-index: 1000; /* Keeps it above other content */
+    filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+
+}
+
+.statue1{
+  position: relative;
+  top: 400px;
+  left: -1175px;
+  
+}
+
+.statue2{
+  position: relative;
+  top: 400px;
+  right: -615px;
+  
+}
 
 }
 
 h1{ 
 
   font-family: "Macondo Swash Caps", cursive;
-  font-weight: 400;
+  position: relative;
+  top: 1200px;
+  font-weight: 200;
   font-style: normal;
-  font-size: 250px;
+  font-size: 280px;
   text-align: center
   
 }
 
-h1{
-  color: lightblue;
+
+div{
+
+  color:white;
+  opacity: 0.9;
+  color: #ffffff;
   animation-name:glow; 
-  animation-duration:1s;
+  animation-duration:1.5s;
   animation-iteration-count:infinite;
   animation-direction:alternate;
 }
 
 @keyframes glow{
-  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
-  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #0d00fe}
+  to{text-shadow:0px 0px 15px #fff,0px 0px 15px #0d00fe}
 }
 
 /* h1{
@@ -104,9 +140,12 @@ h1{
 h2{ 
 
   font-family: "Macondo Swash Caps", cursive;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
-  font-size: 200px
+  font-size: 220px;
+  text-align: center;
+  position: relative;
+  top: 1000px;
 
 }
 
