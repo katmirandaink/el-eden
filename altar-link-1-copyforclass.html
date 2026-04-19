@@ -7,9 +7,10 @@
     <title>...welcome...</title>
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+
 
   </head>
   <body>
@@ -21,6 +22,12 @@
       <p3> I hear voices that echo through time...</p3>
 
     </div>
+
+    <div class="door1"></div>
+    <div class="door2"></div>
+    <div class="door2"></div>
+    <div class="door4"></div>
+    <div class="door5"></div>
 
     <video  
     
@@ -43,6 +50,8 @@
     <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
 
     <img src="Images/Wish 1.png" class="wish"></img>
+    
+    <img src="Images/Stamp_3.png" class="stamp3"></img>
 
 <!--if you wanted to change the sizing of the image you can do img { width: xyz height:xyz}-->
 <!--if you want to change positioning you will need to choose between things like relative, fixed, 
@@ -83,7 +92,6 @@ body{
   top: 0px;
   left: 3500px;
    transform: scaleX(-1) scaleY(-1) rotate(20deg);
-
 }
 
 .spaceoutline{
@@ -91,28 +99,68 @@ body{
   top: 50px;
   left: 50px;
    transform:rotate(-10deg);
-
 }
 
 .mugwort{
   position: absolute;
-  top: 300px;
-  left: 650px;
-
+  top: 400px;
+  left: 750px;
+  height:1300px;
+  width: auto;
+  transform: rotate(2deg);
   } 
   
+.nanacouch{
+  position: absolute;
+  top: 1500px;
+  left: 4000px;
+  height: 1200px;
+  width: auto;
+  transform: rotate(-1deg);
+}
+
+.wish{
+  position: absolute;
+  top: 1500px;
+  left: 600px;
+  width: 1500px;
+  height: auto;
+  transform: rotate(-4deg);
+  opacity: 0.85;
+  z-index: 10;
+}
+
+.stamp3{
+  position: absolute;
+  top: 1550px;
+  left: 4350px;
+  width: 600px;
+  height: auto;
+  transform: rotate(30deg) scaleY(-1);
+
 }
 
 /*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
 this grouping*/
 
 div{
-  position: fixed; 
-  bottom: 20px;
-  font-family: "Macondo Swash Caps", cursive
+  font-family: "Fondamento", cursive;
+   z-index: 1000; /* Keeps it above other content */
 }
+
 p1{
     font-size: 2.5vw;
+    position: absolute; 
+    top: 1590px;
+    left: 2270px;
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 #010760,  
+     1.5px -1.5px 0 #010760,
+    -1.5px  1.5px 0 #010760,
+     1.5px  1.5px 0 #010760;
+     opacity: 0.9;
 }
 
 p2{
@@ -132,5 +180,21 @@ video{
   width: 100%; /* Optional: ensures it spans the full width */
 
 }
+
+.door2{
+  position: absolute;
+  top: 680px;
+  left: 2500px;
+  width: 370px; 
+  height: 880px; 
+   background-color: #010760;
+  opacity: 0;
+}
+
+.door2:hover{
+   transition: opacity 0.3s ease;
+  opacity: 0.5;
+}
+
 
 </style> 
