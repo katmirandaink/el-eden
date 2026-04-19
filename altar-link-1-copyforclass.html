@@ -34,6 +34,8 @@
 
     <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline"></img>
 
+    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline2"></img>
+
     <img src="Images/SoundviewWeeds_Fall_2025_I_37.jpg" class="mugwort"></img>
 
     <img src="Images/NanaHouse_December2025_1.jpg" class="nanacouch"></img>
@@ -69,21 +71,37 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Offsets the image by half its own width/height */
-  height: 3650px;
+  height: 3500px;
   width: auto;
   filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/  
   z-index: 1000; /* Keeps it above other content */
     }
 
+.spaceoutline2 {
+  position: absolute;
+  top: 0px;
+  left: 3500px;
+   transform: scaleX(-1) scaleY(-1) rotate(20deg);
 
+}
 
+.spaceoutline{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+   transform:rotate(-10deg);
 
+}
 
+.mugwort{
+  position: absolute;
+  top: 300px;
+  left: 650px;
 
   } 
   
-
+}
 
 /*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
 this grouping*/
