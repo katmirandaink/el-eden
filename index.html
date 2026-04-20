@@ -4,35 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tab Name</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <p>This is an example of a paragraph</p>
+    <title>...el Edén...</title>
 
-    <a href="page-two.html">Go to Second Page Here</a>
-    
+<!--you can make a style sheet by adding a seperate page style.css and creating a set of rules that all your pages have to follow;
+it activates through this link below; if all you rpages have this link (style sheet) in your boilerplate it will follow those rules-->
+    <link rel="stylesheet" href="style.css">
+
+<!--this is a source code from google fonts that you copied the embded code-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+    <img src="Images/NanaDesign_Couch.png" class="nanacouch"></img>
+
+<!-- this is the code for the heading text you didnt need once you got the svg working
+   
+    <div> 
+       <h1>...porque el campo es el Edén...</h1>
+       <h2>...and its history is timeless...</h2>
+    </div>
+
+  -->
+
+    <svg class="firstcurve" viewBox="0 0 500 500">
+      <!-- this is defining the path of the svg and its properties such as length which is
+       2 to allow you to start in the middle of the path and the fill is transparent so 
+       you only see the text along the path; the path id is "curve" which references to the
+       curve svg we uploaded to the repository so it knows which path to use -->
+  <path id="curve" pathlength="2" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+  <text width="300">
+    <!--the startOffset property controls where the text starts along the path so here it is
+    1 to allow for the text to start in the middle (related to the path length which is 2)
+    the xlink:href attribute links the text to the path which in this case is "curve" svg
+    file we uploaded to the repository-->
+    <textPath xlink:href="#curve" startOffset="1">
+      ...porque el campo es el Edén...
+    </textPath>
+  </text>
+
+</svg>
+<!--here is the second curve for the second text which I put in another class so I could
+reference them both separately; the actual text path however that controls the look of the
+text later on in css is under the same code so all the text path is the same-->
+<svg class="secondcurve" viewBox="0 0 500 500">
+  <path id="curve" pathlength="2" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+  <text width="300">
+    <textPath xlink:href="#curve" startOffset="1">
+      ...and its history is timeless...
+    </textPath>
+  </text>
+
+</svg>
+
+<div class="bead"> 
+  <a href="door-link.html">
+    <img src="Images/KatsLabIcon.png" class="spin-image"> 
+    </a>
+</div>
+
+    <img src="Images/NanaStatue.png" class="statue1"></img>
+
+    <img src="Images/NanaStatueReversed.png" class="statue2"></img>
+
   </body>
+
 </html>
 
-/* 1. Setup the image's initial state and smooth transition */
-div img {
-  transition: transform 0.5s ease-in-out;
+
+<style>
+
+body{ 
+
+    background-color: #010760;
+
+/* I dont know why my page is so long even though all my elements dont go that far down the 
+page; It might be because of the svg text path, but when I look at it, it doesnt go that far
+down*/
+
 }
 
-/* 2. Rotate the image when the parent div is hovered */
-div:hover img {
-  transform: rotate(360deg);
+.spin-image:hover {
+ /*Flips the image horizontally */
+  transform: rotateY(360deg); 
+  transition: transform .5s ease-in-out;
+  /* Adds depth to the 3D rotation */
+  perspective: 1000px; 
 }
 
-.test-box{
-        width: 600px;
-        height: 600px;
-        z-index: -1;
-        background-color: red;
-        opacity: .2;
-        position: fixed;
-        top:0;
-        left:0;
-    }
+.spin-image{
+position: absolute;
+top: 675px;
+left: 660px;
+width: 200px;
+height:auto;
+
+}
+
+.nanacouch{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%; /* Optional: ensures it spans the full width */
+  z-index: 1000; /* Keeps it above other content */
+    filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+
+}
+
+.statue1{
+  position: absolute;
+  top: 375px;
+  left: 0px;
+      filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/ 
+  width:571.25px;
+  height: auto;
+}
+
+
+.statue2{
+  position: absolute;
+  top: 375px;
+  right: 0px;
+      filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/ 
+  width:571.25px;
+  height: auto;
+} 
+
+/*
+------- This the code for the heading text you didnt need once you got the svg working
+h1{ 
+
+  font-family: "fondamento", cursive;
+  font-weight: 200;
+  position: relative;
+  top: 1200px;
+  font-size: 230px;
+  text-align: center;
+  
+}
+
+h2{ 
+
+  font-family: "Fondamento", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 200px;
+  text-align: center;
+  position: relative;
+  top: 1000px;
+
+}
+
+
+------- This is the new glow code that you didnt need once you got the svg working
+
+div{
+
+  color: rgb(255, 255, 255);
+  animation-name:glow; 
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #614ad3,0px 0px 5px #fff }
+  to{text-shadow:0px 0px 15px#614ad3,0px 0px 15px #fff}
+}
+*/
+
+/* ------ This is the old glow code:
+
+h1{
+  font-size:3rem;
+  margin-top:45vh;
+  color:white;
+  font-family: 'Merienda', cursive;
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+} */
+
+
+
+textPath{
+  font-family: "Fondamento", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  text-anchor: middle;
+  fill:white;
+  animation-name:glow; 
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #614ad3,0px 0px 5px #fff }
+  to{text-shadow:0px 0px 15px#614ad3,0px 0px 15px #fff}
+
+}
+
+.firstcurve{
+  position: absolute;
+  top: 200px;
+  left: 2.5px;
+}
+
+.secondcurve{
+  position: absolute;
+  top: 300px;
+  left: 2.5px;
+}
+
+</style> 

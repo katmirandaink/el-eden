@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...welcome...</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+  
+    <div> 
+
+      <p1>...do you hear them?...</p1>
+      <p2>...when my mother speaks to me</p2> 
+      <p3> I hear voices that echo through time...</p3>
+
+    </div>
+
+    <div class="door1"></div>
+    <div class="door2"></div>
+    <div class="door3"></div>
+    <div class="door4"></div>
+    <div class="door5"></div>
+
+    <video  
+    
+        controls autoplay loop muted>
+
+      <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
+
+    </video>
+
+    <!--This is an example of a comment for your code. below are your images-->
+
+    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline"></img>
+
+    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline2"></img>
+
+    <img src="Images/SoundviewWeeds_Fall_2025_I_37.jpg" class="mugwort"></img>
+
+    <img src="Images/NanaHouse_December2025_1.jpg" class="nanacouch"></img>
+
+    <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
+
+    <img src="Images/Wish 1.png" class="wish"></img>
+    
+    <img src="Images/Stamp_3.png" class="stamp3"></img>
+
+<!--if you wanted to change the sizing of the image you can do img { width: xyz height:xyz}-->
+<!--if you want to change positioning you will need to choose between things like relative, fixed, 
+sticky etc. relative means that you are changing the postion of the default relative position 
+(it starts here but I want it 20 px to the right etc) instead of using pixels you can use vh or vw 
+(viewpoint height and width)you can also do fixed position: fixed and keep the image in one place 
+no matter where you scroll you can also do absolute but that's the trickiest-->
+
+  </body>
+
+</html> 
+
+<style>
+
+body{ 
+
+    background-color: #010760;
+
+} 
+
+.nanadoor {
+  position: absolute;
+  top: -350px;
+  left: 1535px;
+  height: 3500px;
+  width: auto;
+  filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+  z-index: 1000; /* Keeps it above other content */
+  }
+
+.spaceoutline2 {
+  position: absolute;
+  top: 0px;
+  left: 3500px;
+   transform: scaleX(-1) scaleY(-1) rotate(20deg);
+}
+
+.spaceoutline{
+  position: absolute;
+  top: 25px;
+  left: 50px;
+   transform:rotate(-10deg);
+}
+
+.mugwort{
+  position: absolute;
+  top: 450px;
+  left: 750px;
+  height:1300px;
+  width: auto;
+  transform: rotate(2deg);
+  } 
+  
+.nanacouch{
+  position: absolute;
+  top: 1500px;
+  left: 4000px;
+  height: 1200px;
+  width: auto;
+  transform: rotate(-2deg);
+}
+
+.wish{
+  position: absolute;
+  top: 1515px;
+  left: 600px;
+  width: 1500px;
+  height: auto;
+  transform: rotate(-4deg);
+  opacity: 0.85;
+  z-index: 10;
+}
+
+.stamp3{
+  position: absolute;
+  top: 1550px;
+  left: 4350px;
+  width: 600px;
+  height: auto;
+  transform: rotate(30deg) scaleY(-1);
+
+}
+
+
+/*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
+this grouping*/
+
+div{
+  font-family: "Fondamento", cursive;
+   z-index: 1000; /* Keeps it above other content */
+}
+
+p1{
+    font-size: 2.5vw;
+    position: absolute; 
+    top: 1635px;
+    left: 2270px;
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 #010760,  
+     1.5px -1.5px 0 #010760,
+    -1.5px  1.5px 0 #010760,
+     1.5px  1.5px 0 #010760;
+     opacity: 0.9;
+}
+
+p2{
+    font-size: 2.75vw;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 #010760,  
+     1.5px -1.5px 0 #010760,
+    -1.5px  1.5px 0 #010760,
+     1.5px  1.5px 0 #010760;
+    /* transform: rotate(1deg); */
+}
+
+p3{
+    font-size: 2.75vw;
+    position: absolute;
+    top: 850px;
+    left: 3650px;
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 #010760,  
+     1.5px -1.5px 0 #010760,
+    -1.5px  1.5px 0 #010760,
+     1.5px  1.5px 0 #010760;
+    /* transform: rotate(-1deg); */
+}
+
+video{ 
+    width: 100vw;
+    height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Optional: ensures it spans the full width */
+
+}
+
+.door1{
+  width: 1220px;
+  height: 700px;
+  background: #010760;
+  clip-path: circle(50% at 50% 100%);
+  z-index: 1000;
+  position: absolute;
+  top: -130px;
+  left: 2380px;
+  opacity: 0.5;
+}
+
+.door2{
+  position: absolute;
+  top: 730px;
+  left: 2500px;
+  width: 370px; 
+  height: 880px; 
+   background-color: #010760;
+}
+
+.door2:hover{
+  opacity: 0.5;
+}
+
+.door3{
+  position: absolute;
+  top: 730px;
+  left: 3080px;
+  width: 370px; 
+  height: 880px; 
+   background-color: #010760;
+}
+
+.door4{
+  position: absolute;
+  top: 1880px;
+  left: 2500px;
+  width: 370px; 
+  height: 880px; 
+   background-color: #010760;
+}
+
+.door5{
+  position: absolute;
+  top: 1880px;
+  left: 3080px;
+  width: 370px; 
+  height: 880px; 
+   background-color: #010760;
+}
+
+
+</style> 

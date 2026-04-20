@@ -22,12 +22,44 @@ it activates through this link below; if all you rpages have this link (style sh
 
     <img src="Images/NanaDesign_Couch.png" class="nanacouch"></img>
 
+<!-- this is the code for the heading text you didnt need once you got the svg working
+   
     <div> 
        <h1>...porque el campo es el Edén...</h1>
-
        <h2>...and its history is timeless...</h2>
-
     </div>
+
+  -->
+
+    <svg class="firstcurve" viewBox="0 0 500 500">
+      <!-- this is defining the path of the svg and its properties such as length which is
+       2 to allow you to start in the middle of the path and the fill is transparent so 
+       you only see the text along the path; the path id is "curve" which references to the
+       curve svg we uploaded to the repository so it knows which path to use -->
+  <path id="curve" pathlength="2" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+  <text width="300">
+    <!--the startOffset property controls where the text starts along the path so here it is
+    1 to allow for the text to start in the middle (related to the path length which is 2)
+    the xlink:href attribute links the text to the path which in this case is "curve" svg
+    file we uploaded to the repository-->
+    <textPath xlink:href="#curve" startOffset="1">
+      ...porque el campo es el Edén...
+    </textPath>
+  </text>
+
+</svg>
+<!--here is the second curve for the second text which I put in another class so I could
+reference them both separately; the actual text path however that controls the look of the
+text later on in css is under the same code so all the text path is the same-->
+<svg class="secondcurve" viewBox="0 0 500 500">
+  <path id="curve" pathlength="2" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+  <text width="300">
+    <textPath xlink:href="#curve" startOffset="1">
+      ...and its history is timeless...
+    </textPath>
+  </text>
+
+</svg>
 
   <a href="altar-link-1-copyforclass.html">
     <img src="Images/KatsLabIcon.png" class="spin-image"> 
@@ -48,10 +80,10 @@ body{
 
     background-color: #010760;
 
-    .spin-image {
-  transition: transform 0.5s ease-in-out;
-  /* Adds depth to the 3D rotation */
-  perspective: 1000px; 
+/* I dont know why my page is so long even though all my elements dont go that far down the 
+page; It might be because of the svg text path, but when I look at it, it doesnt go that far
+down*/
+
 }
 
 .spin-image:hover {
@@ -60,10 +92,22 @@ body{
 }
 
 .spin-image{
-position: relative;
-top:-1000px;
-left:2500px;
+position: absolute;
+top: 2700px;
+left: 50vw;
+transform: translate(-50%, 0%);
+transition: transform 0.5s ease-in-out;
+  /* Adds depth to the 3D rotation */
+perspective: 1000px; 
+width: 800px;
+height:auto;
+
 }
+
+/* I dont know whats happening that wont let my image hover anymore;
+its like the transformation of "translate" is interfering with the hover effect;
+when I rmeove the translate it spins again but I need the translate to position the 
+image directly in the middle */
 
 .nanacouch{
   position: absolute;
@@ -77,23 +121,24 @@ left:2500px;
 }
 
 .statue1{
-  position: relative;
-  top: 400px;
-  left: -1175px;
+  position: absolute;
+  top: 1500px;
+  left: 0px;
       filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/ 
 }
+
 
 .statue2{
-  position: relative;
-  top: 400px;
-  right: -615px;
+  position: absolute;
+  top: 1500px;
+  right: 0px;
       filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/ 
-}
+} 
 
-}
-
+/*
+------- This the code for the heading text you didnt need once you got the svg working
 h1{ 
 
   font-family: "fondamento", cursive;
@@ -105,6 +150,20 @@ h1{
   
 }
 
+h2{ 
+
+  font-family: "Fondamento", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 200px;
+  text-align: center;
+  position: relative;
+  top: 1000px;
+
+}
+
+
+------- This is the new glow code that you didnt need once you got the svg working
 
 div{
 
@@ -119,8 +178,11 @@ div{
   from{text-shadow:0px 0px 5px #614ad3,0px 0px 5px #fff }
   to{text-shadow:0px 0px 15px#614ad3,0px 0px 15px #fff}
 }
+*/
 
-/* h1{
+/* ------ This is the old glow code:
+
+h1{
   font-size:3rem;
   margin-top:45vh;
   color:white;
@@ -136,18 +198,37 @@ div{
   to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
 } */
 
-h2{ 
 
+
+textPath{
   font-family: "Fondamento", cursive;
   font-weight: 200;
   font-style: normal;
-  font-size: 200px;
-  text-align: center;
-  position: relative;
-  top: 1000px;
+  font-size: 20px;
+  text-anchor: middle;
+  fill:white;
+  animation-name:glow; 
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #614ad3,0px 0px 5px #fff }
+  to{text-shadow:0px 0px 15px#614ad3,0px 0px 15px #fff}
 
 }
 
+.firstcurve{
+  position: absolute;
+  top: 800px;
+  left: 10px;
+}
 
+.secondcurve{
+  position: absolute;
+  top: 1200px;
+  left: 10px;
+}
 
 </style> 

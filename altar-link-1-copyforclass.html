@@ -23,10 +23,18 @@
 
     </div>
 
+  <a href="altar-link-2-copyforclass.html">
     <div class="door1"></div>
+  </a>
+
+  <a href="altar-link-3-copyforclass.html"> 
     <div class="door2"></div>
+  </a>
+
     <div class="door3"></div>
+
     <div class="door4"></div>
+
     <div class="door5"></div>
 
     <video  
@@ -70,22 +78,18 @@ body{
 
     background-color: #010760;
 
-    .spaceoutline {
-      position: relative;
+} 
 
-    }
-    
-    .nanadoor {
+.nanadoor {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Offsets the image by half its own width/height */
+  top: -350px;
+  left: 1535px;
   height: 3500px;
   width: auto;
   filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/  
   z-index: 1000; /* Keeps it above other content */
-    }
+  }
 
 .spaceoutline2 {
   position: absolute;
@@ -140,7 +144,6 @@ body{
 
 }
 
-}
 
 /*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
 this grouping*/
@@ -176,7 +179,7 @@ p2{
     -1.5px -1.5px 0 #010760,  
      1.5px -1.5px 0 #010760,
     -1.5px  1.5px 0 #010760,
-     1.5px  1.5px 0 #010760
+     1.5px  1.5px 0 #010760;
 }
 
 p3{
@@ -194,65 +197,94 @@ p3{
 }
 
 video{ 
-    width: 100vw;
+    width: 6083px;
     height: auto;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Optional: ensures it spans the full width */
 
 }
 
 .door1{
   width: 1220px;
   height: 700px;
-  background: #010760;
   clip-path: circle(50% at 50% 100%);
-  z-index: 1000;
+  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
   position: absolute;
-  top: -130px;
-  left: 2380px;
+  top: -135px;
+  left: 2376px;
+  transform: rotate(.5deg)
+}
+.door1:hover{
+  background-color: #010760;
+  opacity: 0.5;
 }
 
 .door2{
   position: absolute;
-  top: 730px;
-  left: 2500px;
+  top: 724.78px;
+  left: 2498px;
   width: 370px; 
   height: 880px; 
-   background-color: #010760;
+  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
 }
-
 .door2:hover{
+  background-color: #010760;
   opacity: 0.5;
 }
 
 .door3{
   position: absolute;
-  top: 730px;
-  left: 3080px;
+  top: 725px;
+  left: 3077px;
   width: 370px; 
   height: 880px; 
-   background-color: #010760;
+  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.door3:hover{
+  background-color: #010760;
+  opacity: 0.5;
 }
 
 .door4{
   position: absolute;
-  top: 1880px;
-  left: 2500px;
+  top: 1873px;
+  left: 2498px;
   width: 370px; 
   height: 880px; 
-   background-color: #010760;
+  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.door4:hover{
+  background-color: #010760;
+  opacity: 0.5;
 }
 
 .door5{
   position: absolute;
-  top: 1880px;
-  left: 3080px;
+  top: 1873px;
+  left: 3077px;
   width: 370px; 
   height: 880px; 
-   background-color: #010760;
+  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
 }
-
+.door5:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
 
 </style> 
