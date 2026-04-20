@@ -98,10 +98,15 @@ height:auto;
 }
 
 .spin-image:hover {
- /*Flips the image horizontally */
+ /*Flips the image horizontally (rotateY); needed to added the translate code from above to
+ the hover transform command so that it knows to rotate the image along the translate line 
+ and not at the image's orginal center; ensures the effect actually works; doesn't work 
+ without this */
   transform: translate(-50%, 0%) rotateY(360deg); 
+/* transition helps make the transform effect smoother and less jagged; also controls how 
+long the transform effect occurs for*/
   transition: transform .5s ease-in-out;
-  /* Adds depth to the 3D rotation */
+/* Adds depth to the 3D rotation */
   perspective: 1000px; 
 }
 
