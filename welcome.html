@@ -14,7 +14,15 @@
 
   </head>
   <body>
-  
+
+    <video  
+    
+         autoplay loop muted>
+
+      <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
+
+    </video>
+
     <div> 
 
       <p1>...do you hear them?...</p1>
@@ -23,9 +31,9 @@
 
     </div>
 
-    <div id="door"> 
+    <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
 
-            <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
+    <div class="door"> 
 
         <a href="door-link-1.html">
              <div class="door1"></div>
@@ -42,13 +50,6 @@
              <div class="door5"></div>
     </div>
 
-    <video  
-    
-         autoplay loop muted>
-
-      <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
-
-    </video>
 
     <!--This is an example of a comment for your code. below are your images-->
 
@@ -83,16 +84,14 @@ body{
 
 } 
 
-.nanadoor {
+video{ 
+    width: 100vw;
+    height: auto;
   position: absolute;
-  top: -87.5px;
-  left: 383.75px;
-  height: 875px;
-  width: auto;
-  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
-  I like this color:#0d00fe*/  
-  z-index: 1000; /* Keeps it above other content */
-  }
+  top: 0;
+  left: 0;
+
+}
 
 .spaceoutline{
   position: absolute;
@@ -204,13 +203,29 @@ p3{
      .4px  .4px 0 #010760;
 }
 
-video{ 
-    width: 100vw;
-    height: auto;
+/* 
+.nanadoor {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -87.5px;
+  left: 383.75px;
+  height: 875px;
+  width: auto;
+  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe
+  z-index: 1000; /* Keeps it above other content 
+  } 
+  */
 
+.nanadoor {
+  position: absolute;
+  top: 3vh;
+  left: 50vw;
+  transform: translate(-50%, -3%);
+  height: 875px;
+  width: auto;
+  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe */
+  z-index: 1000; /* Keeps it above other content */
 }
 
 .door1{
