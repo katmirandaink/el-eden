@@ -14,42 +14,34 @@
 
   </head>
   <body>
-
-    <video  
-    
-         autoplay loop muted>
-
-      <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
-
-    </video>
-
-    <div> 
+  
+    <div class="text"> 
 
       <p1>...do you hear them?...</p1>
       <p2>...when my mother speaks to me</p2> 
       <p3> I hear voices that echo through time...</p3>
 
-    </div>
+      <a href="door-link-1.html">
+        <div class="door1"></div>
+      </a>
 
-    <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
+      <a href="door-link-2.html"> 
+        <div class="door2"></div>
+      </a>
 
-    <div class="door"> 
+       <div class="door3"></div>
 
-        <a href="door-link-1.html">
-             <div class="door1"></div>
-         </a>
+       <div class="door4"></div>
 
-         <a href="door-link-2.html"> 
-             <div class="door2"></div>
-        </a>
+       <div class="door5"></div>
 
-             <div class="door3"></div>
+    <video  
+    
+       autoplay loop muted>
 
-             <div class="door4"></div>
+      <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
 
-             <div class="door5"></div>
-    </div>
-
+    </video>
 
     <!--This is an example of a comment for your code. below are your images-->
 
@@ -61,6 +53,8 @@
 
     <img src="Images/NanaHouse_December2025_1.jpg" class="nanacouch"></img>
 
+    <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
+
     <img src="Images/Wish 1.png" class="wish"></img>
     
     <img src="Images/Stamp_3.png" class="stamp3"></img>
@@ -71,6 +65,17 @@ sticky etc. relative means that you are changing the postion of the default rela
 (it starts here but I want it 20 px to the right etc) instead of using pixels you can use vh or vw 
 (viewpoint height and width)you can also do fixed position: fixed and keep the image in one place 
 no matter where you scroll you can also do absolute but that's the trickiest-->
+
+<!--
+<div id="parent">
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+
+</div>
+-->
+
 
   </body>
 
@@ -84,14 +89,16 @@ body{
 
 } 
 
-video{ 
-    width: 100vw;
-    height: auto;
+.nanadoor {
   position: absolute;
-  top: 0;
-  left: 0;
-
-}
+  top: -87.5px;
+  left: 383.75px;
+  height: 875px;
+  width: auto;
+  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+  z-index: 1000; /* Keeps it above other content */
+  }
 
 .spaceoutline{
   position: absolute;
@@ -105,7 +112,7 @@ video{
 .spaceoutline2 {
   position: absolute;
   top: 3vh;
-  left: 66vw;
+  left: 66vw;;
    transform: scaleX(-1) scaleY(-1) rotate(20deg);
   width: 372.25px;
   height: auto;
@@ -113,37 +120,37 @@ video{
 
 .mugwort{
   position: absolute;
-  top: 13vh;
-  left: 11vw;
+  top: 112.5px;
+  left: 187.5px;
   height: 325px;
   width: auto;
   transform: rotate(2deg);
   } 
+  
+.nanacouch{
+  position: absolute;
+  top: 375px;
+  left: 1000px;
+  height: 300px;
+  width: auto;
+  transform: rotate(-2deg);
+}
 
 .wish{
   position: absolute;
-  top: 39vh;
-  left: 10vw;
+  top: 378.75px;
+  left: 150px;
   width: 375px;
   height: auto;
   transform: rotate(-4deg);
   opacity: 0.85;
   z-index: 10;
 }
-  
-.nanacouch{
-  position: absolute;
-  top: 46vh;
-  left: 71vw;
-  height: 300px;
-  width: auto;
-  transform: rotate(-2deg);
-}
 
 .stamp3{
   position: absolute;
-  top: 47vh;
-  left: 75.5vw;
+  top: 387.5px;
+  left: 1087.5px;
   width: 150px;
   height: auto;
   transform: rotate(30deg) scaleY(-1);
@@ -154,17 +161,16 @@ video{
 /*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
 this grouping*/
 
-div{
+div.text{
   font-family: "Fondamento", cursive;
    z-index: 1000; /* Keeps it above other content */
 }
 
 p1{
-    font-size: 2.5vw;
+    font-size: 35px;
     position: absolute; 
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+    top: 408.75px;
+    left: 580px;
     z-index: 1;
     color: white;
     text-shadow: 
@@ -176,7 +182,7 @@ p1{
 }
 
 p2{
-    font-size: 2.75vw;
+    font-size: 40px;
     position: absolute;
     top: 7.5vh;
     left: 1.5vw;
@@ -190,7 +196,7 @@ p2{
 }
 
 p3{
-    font-size: 2.75vw;
+    font-size: 40px;
     position: absolute;
     top: 20vh;
     left: 62vw;
@@ -203,29 +209,15 @@ p3{
      .4px  .4px 0 #010760;
 }
 
-/* 
-.nanadoor {
-  position: absolute;
-  top: -87.5px;
-  left: 383.75px;
-  height: 875px;
-  width: auto;
-  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
-  I like this color:#0d00fe
-  z-index: 1000; /* Keeps it above other content 
-  } 
-  */
+video{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Zooms to fill without stretching */
+  z-index: -1;       /* Keeps it behind other content */
 
-.nanadoor {
-  position: absolute;
-  top: 3vh;
-  left: 50vw;
-  transform: translate(-50%, -3%);
-  height: 875px;
-  width: auto;
-  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
-  I like this color:#0d00fe */
-  z-index: 1000; /* Keeps it above other content */
 }
 
 .door1{
@@ -241,10 +233,6 @@ p3{
   left: 594px;
   transform: rotate(.5deg)
 }
-.door1:hover{
-  background-color: #010760;
-  opacity: 0.5;
-}
 
 .door2{
   position: absolute;
@@ -256,10 +244,6 @@ p3{
   visible until the div is located over the door even though the png is transparent; the 
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
-}
-.door2:hover{
-  background-color: #010760;
-  opacity: 0.5;
 }
 
 .door3{
@@ -273,10 +257,6 @@ p3{
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
 }
-.door3:hover{
-  background-color: #010760;
-  opacity: 0.5;
-}
 
 .door4{
   position: absolute;
@@ -288,10 +268,6 @@ p3{
   visible until the div is located over the door even though the png is transparent; the 
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
-}
-.door4:hover{
-  background-color: #010760;
-  opacity: 0.5;
 }
 
 .door5{
@@ -305,9 +281,45 @@ p3{
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
 }
+
+
+.door1:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.door2:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.door3:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.door4:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
 .door5:hover{
   background-color: #010760;
   opacity: 0.5;
 }
+
+/*
+#parent {
+    width:100vw;
+    height:100vh;
+    background-color:white;
+    border:2px solid blue;
+    position:relative;
+}
+#div1 {position:absolute;bottom:0;right:0;background:green;width:25vw;height:25vh;}
+#div2 {width:25vw;height:25vh;position:absolute;bottom:0;left:0;background:red;}
+#div3 {width:25vw;height:25vh;position:absolute;top:0;right:0;background:yellow;}
+#div4 {width:25vw;height:25vh;position:absolute;top:0;left:0;background:gray;}
+*/
 
 </style> 

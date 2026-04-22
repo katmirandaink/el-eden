@@ -62,7 +62,7 @@ text later on in css is under the same code so all the text path is the same-->
 </svg>
 
 <div class="bead"> 
-  <a href="door-link.html">
+  <a href="door-link-with-pixels.html">
     <img src="Images/KatsLabIcon.png" class="spin-image"> 
     </a>
 </div>
@@ -88,21 +88,26 @@ down*/
 
 }
 
-.spin-image:hover {
- /*Flips the image horizontally */
-  transform: rotateY(360deg); 
-  transition: transform .5s ease-in-out;
-  /* Adds depth to the 3D rotation */
-  perspective: 1000px; 
-}
-
 .spin-image{
 position: absolute;
 top: 675px;
-left: 660px;
+left: 50vw;
+transform: translate(-50%, 0%);
 width: 200px;
 height:auto;
+}
 
+.spin-image:hover {
+ /*Flips the image horizontally (rotateY); needed to added the translate code from above to
+ the hover transform command so that it knows to rotate the image along the translate line 
+ and not at the image's orginal center; ensures the effect actually works; doesn't work 
+ without this */
+  transform: translate(-50%, 0%) rotateY(360deg); 
+/* transition helps make the transform effect smoother and less jagged; also controls how 
+long the transform effect occurs for*/
+  transition: transform .5s ease-in-out;
+/* Adds depth to the 3D rotation */
+  perspective: 1000px; 
 }
 
 .nanacouch{
@@ -118,8 +123,8 @@ height:auto;
 
 .statue1{
   position: absolute;
-  top: 375px;
-  left: 0px;
+  top: 45vh;
+  left: 0vw;
       filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/ 
   width:571.25px;
@@ -129,8 +134,8 @@ height:auto;
 
 .statue2{
   position: absolute;
-  top: 375px;
-  right: 0px;
+  top: 45vh;
+  right: 0vw;
       filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/ 
   width:571.25px;

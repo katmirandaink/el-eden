@@ -15,31 +15,31 @@
   </head>
   <body>
   
-    <div> 
+    <div class="text"> 
 
       <p1>...do you hear them?...</p1>
       <p2>...when my mother speaks to me</p2> 
       <p3> I hear voices that echo through time...</p3>
 
-    </div>
+    </div id="container">
 
-  <a href="door-link-1.html">
-    <div class="door1"></div>
-  </a>
+      <a href="door-link-1.html">
+        <div class="door1"></div>
+      </a>
 
-  <a href="door-link-2.html"> 
-    <div class="door2"></div>
-  </a>
+      <a href="door-link-2.html"> 
+        <div class="door2"></div>
+      </a>
 
-    <div class="door3"></div>
+       <div class="door3"></div>
 
-    <div class="door4"></div>
+       <div class="door4"></div>
 
-    <div class="door5"></div>
+       <div class="door5"></div>
 
     <video  
     
-        controls autoplay loop muted>
+       autoplay loop muted>
 
       <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
 
@@ -152,7 +152,7 @@ body{
 /*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
 this grouping*/
 
-div{
+div.text{
   font-family: "Fondamento", cursive;
    z-index: 1000; /* Keeps it above other content */
 }
@@ -201,11 +201,13 @@ p3{
 }
 
 video{ 
-    width: 1521px;
-    height: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Zooms to fill without stretching */
+  z-index: -1;       /* Keeps it behind other content */
 
 }
 

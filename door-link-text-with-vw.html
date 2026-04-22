@@ -41,7 +41,7 @@
 
     <video  
     
-        controls autoplay loop muted>
+        autoplay loop muted>
 
       <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
 
@@ -81,17 +81,6 @@ body{
     background-color: #010760;
 
 } 
-
-.nanadoor {
-  position: absolute;
-  top: -87.5px;
-  left: 383.75px;
-  height: 875px;
-  width: auto;
-  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
-  I like this color:#0d00fe*/  
-  z-index: 1000; /* Keeps it above other content */
-  }
 
 .spaceoutline{
   position: absolute;
@@ -162,9 +151,9 @@ div{
 p1{
     font-size: 2.5vw;
     position: absolute; 
-    top: 50vh;
+    top: 63vh;
     left: 50vw;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -63%);
     z-index: 1;
     color: white;
     text-shadow: 
@@ -204,25 +193,39 @@ p3{
 }
 
 video{ 
-    width: 100vw;
-    height: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Zooms to fill without stretching */
+  z-index: -1;       /* Keeps it behind other content */
 
 }
 
+.nanadoor {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  height: 128vh;
+  width: auto;
+  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+  z-index: 1000; /* Keeps it above other content */
+  }
+
 .door1{
-  width: 305px;
-  height: 175px;
+  width: 21.5vw;
+  height: 21vh;
   clip-path: circle(50% at 50% 100%);
   z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
   visible until the div is located over the door even though the png is transparent; the 
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
   position: absolute;
-  top: -33.75px;
-  left: 594px;
+  top: -1.5vh;
+  left: 38.4vw;
   transform: rotate(.5deg)
 }
 .door1:hover{
