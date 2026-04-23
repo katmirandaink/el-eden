@@ -21,19 +21,19 @@
       <p2>...when my mother speaks to me</p2> 
       <p3> I hear voices that echo through time...</p3>
 
-      <a href="door-link-1.html">
+      <a href="arch-link.html">
+        <div class="arch"></div>
+      </a>
+
+      <a href="door-link-1.html"> 
         <div class="door1"></div>
       </a>
 
-      <a href="door-link-2.html"> 
-        <div class="door2"></div>
-      </a>
+       <div class="door2"></div>
 
        <div class="door3"></div>
 
        <div class="door4"></div>
-
-       <div class="door5"></div>
 
     <video  
     
@@ -45,9 +45,17 @@
 
     <!--This is an example of a comment for your code. below are your images-->
 
-    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline"></img>
+    <div class="stars">
 
-    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline2"></img>
+      <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline"></img>
+
+      <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline2"></img>
+
+      <img src="Images/IglesiaCuidadDelGranRey_Stars_Piece_1.png" class="stars1"></img>
+
+      <img src="Images/IglesiaCuidadDelGranRey_Stars_Piece_1.png" class="stars2"></img>
+
+    </div>
 
     <img src="Images/SoundviewWeeds_Fall_2025_I_37.jpg" class="mugwort"></img>
 
@@ -97,25 +105,50 @@ body{
   width: auto;
   filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
   I like this color:#0d00fe*/  
-  z-index: 1000; /* Keeps it above other content */
+  z-index: 1003; /* Keeps it above other content */
   }
 
 .spaceoutline{
   position: absolute;
   top: 1vh;
   left: 3vw;
-   transform:rotate(-10deg);
+  transform:rotate(-10deg);
   width:372.25px;
   height: auto;
+
 }
 
 .spaceoutline2 {
   position: absolute;
   top: 3vh;
-  left: 66vw;;
-   transform: scaleX(-1) scaleY(-1) rotate(20deg);
+  left: 66vw;
+  transform: scaleX(-1) scaleY(-1) rotate(20deg);
   width: 372.25px;
   height: auto;
+  
+}
+
+.stars1{
+  position: absolute;
+  top: 31vh;
+  left: 30vw;
+  width: 70px;
+  height:auto;
+  transform: rotate(30deg)
+}
+
+.stars2{
+  position: absolute;
+  top: 40vh;
+  left: 61vw;
+  width: 90px;
+  height:auto;
+  transform: scaleX(-1)rotate(-60deg);
+
+}
+
+.stars{
+filter: drop-shadow(0 0 1px #0d00fe);
 }
 
 .mugwort{
@@ -161,19 +194,11 @@ body{
 /*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
 this grouping*/
 
-div.text{
+.text{
   font-family: "Fondamento", cursive;
-   z-index: 1000; /* Keeps it above other content */
-}
-
-p1{
-    font-size: 35px;
-    position: absolute; 
-    top: 408.75px;
-    left: 580px;
-    z-index: 1;
-    color: white;
-    text-shadow: 
+   z-index: 1002; /* Keeps it above other content */
+   color: white;
+   text-shadow: 
     -.4px -.4px 0 #010760,  
      .4px -.4px 0 #010760,
     -.4px  .4px 0 #010760,
@@ -181,18 +206,20 @@ p1{
      opacity: 0.9;
 }
 
+p1{
+    font-size: 35px;
+    position: absolute; 
+    top: 408.75px;
+    left: 580px;
+    z-index: 1002;
+}
+
 p2{
     font-size: 40px;
     position: absolute;
     top: 7.5vh;
     left: 1.5vw;
-    z-index: 1;
-    color: white;
-    text-shadow: 
-    -.4px -.4px 0 #010760,  
-     .4px -.4px 0 #010760,
-    -.4px  .4px 0 #010760,
-     .4px  .4px 0 #010760;
+    z-index: 1002;
 }
 
 p3{
@@ -200,13 +227,7 @@ p3{
     position: absolute;
     top: 20vh;
     left: 62vw;
-    z-index: 1;
-    color: white;
-    text-shadow: 
-    -.4px -.4px 0 #010760,  
-     .4px -.4px 0 #010760,
-    -.4px  .4px 0 #010760,
-     .4px  .4px 0 #010760;
+    z-index: 1002;
 }
 
 video{ 
@@ -220,11 +241,11 @@ video{
 
 }
 
-.door1{
+.arch{
   width: 305px;
   height: 175px;
   clip-path: circle(50% at 50% 100%);
-  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  z-index: 1004; /* Keeps it above the door outline; becasue the hover effect color won't be
   visible until the div is located over the door even though the png is transparent; the 
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
@@ -234,13 +255,25 @@ video{
   transform: rotate(.5deg)
 }
 
-.door2{
+.door1{
   position: absolute;
   top: 181.25px;
   left: 624.5px;
   width: 92.5px; 
   height: 220px; 
-  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  z-index: 1004; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+
+.door2{
+  position: absolute;
+  top: 181.25px;
+  left: 769.25px;
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1004; /* Keeps it above the door outline; becasue the hover effect color won't be
   visible until the div is located over the door even though the png is transparent; the 
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
@@ -248,11 +281,11 @@ video{
 
 .door3{
   position: absolute;
-  top: 181.25px;
-  left: 769.25px;
+  top: 468.25px;
+  left: 624.5px;
   width: 92.5px; 
   height: 220px; 
-  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
+  z-index: 1004; /* Keeps it above the door outline; becasue the hover effect color won't be
   visible until the div is located over the door even though the png is transparent; the 
   cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
   unless it is directly on top */
@@ -261,18 +294,6 @@ video{
 .door4{
   position: absolute;
   top: 468.25px;
-  left: 624.5px;
-  width: 92.5px; 
-  height: 220px; 
-  z-index: 1001; /* Keeps it above the door outline; becasue the hover effect color won't be
-  visible until the div is located over the door even though the png is transparent; the 
-  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
-  unless it is directly on top */
-}
-
-.door5{
-  position: absolute;
-  top: 468.25px;
   left: 769.25px;
   width: 92.5px; 
   height: 220px; 
@@ -282,6 +303,11 @@ video{
   unless it is directly on top */
 }
 
+
+.arch:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
 
 .door1:hover{
   background-color: #010760;
@@ -299,11 +325,6 @@ video{
 }
 
 .door4:hover{
-  background-color: #010760;
-  opacity: 0.5;
-}
-
-.door5:hover{
   background-color: #010760;
   opacity: 0.5;
 }

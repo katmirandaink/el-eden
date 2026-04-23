@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...welcome...</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+  
+    <div> 
+
+      <p1>...do you hear them?...</p1>
+      <p2>...when my mother speaks to me</p2> 
+      <p3> I hear voices that echo through time...</p3>
+
+    </div>
+
+    <div id="container"> 
+        <a href="door-link-1.html">
+             <div class="arch"></div>
+         </a>
+
+         <a href="door-link-2.html"> 
+             <div class="door1"></div>
+        </a>
+
+             <div class="door2"></div>
+
+             <div class="door3"></div>
+
+             <div class="door4"></div>
+    </div>
+
+    <video  
+    
+        autoplay loop muted>
+
+      <source src="Videos/Kerhonkson_LakeMinnewaska_1_Trimmed.mp4" type="video/mp4" />
+
+    </video>
+
+    <!--This is an example of a comment for your code. below are your images-->
+
+    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline"></img>
+
+    <img src="Images/IglesiaCuidadDelGranRey_Stars.png" class="spaceoutline2"></img>
+
+    <img src="Images/SoundviewWeeds_Fall_2025_I_37.jpg" class="mugwort"></img>
+
+    <img src="Images/NanaHouse_December2025_1.jpg" class="nanacouch"></img>
+
+    <img src="Images/NanaDesign_Door_1.png" class="nanadoor"></img>
+
+    <img src="Images/Wish 1.png" class="wish"></img>
+    
+    <img src="Images/Stamp_3.png" class="stamp3"></img>
+
+    <img src="Images/NanaDesign_DoorPiece.png" class="nanadoorpiece1"></img>
+    <img src="Images/NanaDesign_DoorPiece.png" class="nanadoorpiece2"></img>
+    <img src="Images/NanaDesign_DoorPiece.png" class="nanadoorpiece3"></img>
+    <img src="Images/NanaDesign_DoorPiece.png" class="nanadoorpiece4"></img>
+
+<!--if you wanted to change the sizing of the image you can do img { width: xyz height:xyz}-->
+<!--if you want to change positioning you will need to choose between things like relative, fixed, 
+sticky etc. relative means that you are changing the postion of the default relative position 
+(it starts here but I want it 20 px to the right etc) instead of using pixels you can use vh or vw 
+(viewpoint height and width)you can also do fixed position: fixed and keep the image in one place 
+no matter where you scroll you can also do absolute but that's the trickiest-->
+
+  </body>
+
+</html> 
+
+<style>
+
+body{ 
+
+    background-color: #010760;
+
+} 
+
+.spaceoutline{
+  position: absolute;
+  top: 1vh;
+  left: 3vw;
+   transform:rotate(-10deg);
+  width:372.25px;
+  height: auto;
+}
+
+.spaceoutline2 {
+  position: absolute;
+  top: 3vh;
+  left: 66vw;
+   transform: scaleX(-1) scaleY(-1) rotate(20deg);
+  width: 372.25px;
+  height: auto;
+}
+
+.mugwort{
+  position: absolute;
+  top: 13vh;
+  left: 11vw;
+  height: 325px;
+  width: auto;
+  transform: rotate(2deg);
+  } 
+
+.wish{
+  position: absolute;
+  top: 39vh;
+  left: 10vw;
+  width: 375px;
+  height: auto;
+  transform: rotate(-4deg);
+  opacity: 0.85;
+  z-index: 10;
+}
+  
+.nanacouch{
+  position: absolute;
+  top: 46vh;
+  left: 71vw;
+  height: 300px;
+  width: auto;
+  transform: rotate(-2deg);
+}
+
+.stamp3{
+  position: absolute;
+  top: 47vh;
+  left: 75.5vw;
+  width: 150px;
+  height: auto;
+  transform: rotate(30deg) scaleY(-1);
+
+}
+
+
+/*if you wanted to create an effect with hover you can do img:hover{ and you add your effect within 
+this grouping*/
+
+div{
+  font-family: "Fondamento", cursive;
+   z-index: 1000; /* Keeps it above other content */
+}
+
+p1{
+    font-size: 2.5vw;
+    position: absolute; 
+    top: 63vh;
+    left: 50vw;
+    transform: translate(-50%, -63%);
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -.4px -.4px 0 #010760,  
+     .4px -.4px 0 #010760,
+    -.4px  .4px 0 #010760,
+     .4px  .4px 0 #010760;
+     opacity: 0.9;
+}
+
+p2{
+    font-size: 2.75vw;
+    position: absolute;
+    top: 7.5vh;
+    left: 1.5vw;
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -.4px -.4px 0 #010760,  
+     .4px -.4px 0 #010760,
+    -.4px  .4px 0 #010760,
+     .4px  .4px 0 #010760;
+}
+
+p3{
+    font-size: 2.75vw;
+    position: absolute;
+    top: 20vh;
+    left: 62vw;
+    z-index: 1;
+    color: white;
+    text-shadow: 
+    -.4px -.4px 0 #010760,  
+     .4px -.4px 0 #010760,
+    -.4px  .4px 0 #010760,
+     .4px  .4px 0 #010760;
+}
+
+video{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Zooms to fill without stretching */
+  z-index: -1;       /* Keeps it behind other content */
+
+}
+
+.nanadoor {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  height: 128vh;
+  width: auto;
+  filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+  z-index: 1000; /* Keeps it above other content */
+  }
+
+.arch{
+  position: absolute;
+  top: 5vh;
+  left: 40vw;
+  transform: translate(-5%, -40%) rotate(.5deg);
+  width: 23vw;
+  height: 21vh;
+  clip-path: circle(50% at 50% 100%);
+  z-index: 1002; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.arch:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.door1{
+  position: absolute;
+  top: 39.2vh;
+  left: 43.25vw;
+  transform: translate(-39.2%, -43.25%);
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1002; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.door1:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.nanadoorpiece1{
+  position: absolute;
+  top: 39.2vh;
+  left: 43.25vw;
+  transform: translate(-39.2%, -43.25%);
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1001;
+
+}
+
+.door2{
+  position: absolute;
+  top: 42.35vh;
+  left: 53.5vw;
+  transform: translate(-42.35%, -53.5%);
+  width: 92.5px; 
+  height: 220px; 
+  /* width: 6vw; 
+  height: 32vh; */
+  z-index: 1002; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.door2:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.nanadoorpiece2{
+  position: absolute;
+  top: 42.35vh;
+  left: 53.5vw;
+  transform: translate(-42.35%, -53.5%);
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1001;
+
+}
+
+.door3{
+  position: absolute;
+  top: 67.5vh;
+  left: 41vw;
+  width: 92.5px; 
+  height: 220px;
+  z-index: 1002; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.door3:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.nanadoorpiece3{
+  position: absolute;
+  top: 67.5vh;
+  left: 41vw;
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1001;
+
+}
+
+.door4{
+  position: absolute;
+  top: 67.5vh;
+  left: 50.75vw;
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1002; /* Keeps it above the door outline; becasue the hover effect color won't be
+  visible until the div is located over the door even though the png is transparent; the 
+  cursor needs to REGISTER that it hovering over the div NOT the outline and it can't do that
+  unless it is directly on top */
+}
+.door4:hover{
+  background-color: #010760;
+  opacity: 0.5;
+}
+
+.nanadoorpiece4{
+  position: absolute;
+  top: 67.5vh;
+  left: 50.75vw;
+  width: 92.5px; 
+  height: 220px; 
+  z-index: 1001;
+
+}
+
+</style> 
