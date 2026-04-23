@@ -26,12 +26,18 @@
   </div>
 
 <div class="breezeblock">
-    <a href="door-link-2.html">
+    <a href="door-1.html">
     <img src="Images/NanaDesign_BreezeBlock.png" class="breezeblock1"></img>
     </a>
-    
+    <a href="door-2.html">
     <img src="Images/NanaDesign_BreezeBlock.png" class="breezeblock2"></img>
+    </a>
+    <a href="door-3.html">
     <img src="Images/NanaDesign_BreezeBlock.png" class="breezeblock3"></img>
+    </a>
+    <a href="door-4.html">
+    <img src="Images/NanaDesign_BreezeBlock.png" class="breezeblock4"></img>
+    </a>
 </div>
 
 <img src="Images/SoundviewWeeds_Fall_2025_I_50.jpg" class="tomato"></img>
@@ -69,16 +75,18 @@
       top: 35px;
       left: 300px;
       position: absolute;
-      opacity: 0.9;
+      opacity: 0.75;
       z-index: 0;
     }
 
     .tomato{
-      width: 200px;
+      width: 350px;
       height: auto;
       top: 400px;
-      left: 450px;
+      left: 100px;
       position: absolute;
+      transform: rotate(4deg);
+      opacity: 0.;
     }
 
     .keys{
@@ -87,7 +95,8 @@
       top: 300px;
       left: 1010px;
       position: absolute;
-      transform:rotate(2deg);
+      transform:rotate(-2deg);
+      opacity: 0.9;
     }
 
     .breezeblock1{
@@ -96,11 +105,11 @@
       top: 14vh;
       left:6vw;
       position: absolute;
-      transform:rotate(-6deg);
+      transform:rotate(-8deg);
       z-index: 10;
     }
 
-    .breezeblock2{
+    .breezeblock3{
       width: 200px;
       height: auto;
       top: 25vh;
@@ -109,13 +118,23 @@
       z-index: 10;
     }
 
-    .breezeblock3{
+    .breezeblock4{
       width: 150px;
       height: auto;
       top: 70vh;
       left: 45vw;
       position: absolute;
-      transform: rotate(8deg);
+      transform: rotate(26deg);
+      z-index: 10;
+    }
+
+    .breezeblock2{
+      width: 25px;
+      height: auto;
+      top: 10vh;
+      right: 28vw;
+      position: absolute;
+      transform: rotate(-46deg);
       z-index: 10;
     }
 
@@ -125,12 +144,17 @@
     }
     .breezeblock2:hover {
     animation: rotate3d 3s infinite linear;
-    filter: drop-shadow(2px 2px 2px rgb(255, 191, 0));
+    filter: drop-shadow(1px 1px 1px rgb(60, 255, 60));
     }
     .breezeblock3:hover {
     animation: rotate3d 3s infinite linear;
+    filter: drop-shadow(2px 2px 2px rgb(255, 191, 0));
+    }
+    .breezeblock4:hover {
+    animation: rotate3d 3s infinite linear;
     filter: drop-shadow(2px 2px 2px skyblue);
     }
+    
 
 @keyframes rotate3d {
     0% {transform: rotateX(0) rotateY(0);}
