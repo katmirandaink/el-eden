@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>...welcome...</title>
+    <title>...inthebody...</title>
     <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,8 @@
 
     <img src="Images/BusteloHands_1_2.png" class="bustelo1"></img>
     <img src="Images/BusteloHands2_2.png" class="bustelo2"></img>
+    <img src="Images/LetterDesign.png" class="letterdesign"></img>
+    <img src="Images/NanaHouse_December2025_INanaHouse_December2025_IP 4.jpg" class="couchsidedesign"></img>
 
     <video 
     autoplay loop muted 
@@ -43,14 +45,61 @@
 
     .text{
       font-family: 'Fondamento', cursive;
-      font-size: 20px;
+      font-size: 25px;
       color: white;
-      z-index: 1000;
       text-shadow: 
       -.4px -.4px 0 #010760,  
        .4px -.4px 0 #010760,
       -.4px  .4px 0 #010760,
        .4px  .4px 0 #010760;
+    }
+
+    p1{
+    position: absolute; 
+    top: 1.5vh;
+    left: 5vw;
+    z-index: 1002;
+
+    }
+
+    p2{
+      position: absolute;
+      top: 6.5vh;
+      left: 38vw;
+      z-index: 1002;
+
+    }
+
+    p3{
+      position: absolute;
+      top: 18vh;
+      left: 74vw;
+      z-index: 1002;
+
+    }
+
+    p4{
+      position: absolute;
+      top: 50vh;
+      left: 16vw;
+      z-index: 1002;
+
+    }
+
+    p5{
+      position: absolute;
+      top: 67vh;
+      left: 32vw;
+      z-index: 1002;
+
+    }
+
+    p6{
+      position: absolute;
+      top: 85vh;
+      left: 45vw;
+      z-index: 1002;
+
     }
 
     .bustelo1{
@@ -59,18 +108,20 @@
       left: 100px;
       width: 450px;
       height: auto;
-      z-index:1;
+      z-index:3;
       transform:rotate(-25deg);
+      opacity:0.9
     }
 
     .bustelo2{
       position: absolute;
-      bottom: 120px;
-      right: 280px;
+      top: 300px;
+      left: 800px;
       width: 450px;
       height: auto;
-      z-index: 1;
-      transform:rotate(-18deg)
+      z-index: 3;
+      transform:rotate(-18deg);
+      opacity: 0.85;
     }
 
     video{
@@ -79,6 +130,26 @@
       height:auto;
       top: 105px;
       left: 280px;
+      z-index: 1;
+    }
+
+    .letterdesign{
+      position:absolute;
+      width: 825px;
+      height: 485px;
+      top: 88px;
+      left: 265px;
+      opacity: 0.7;
+      z-index:2;
+    }
+
+    .couchsidedesign{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    height:650px;
+    width: auto;
+    transform:scaleX(-1)
     }
 
     </style>
