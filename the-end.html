@@ -31,9 +31,36 @@
 
     }
 
+    p1{
+      position: absolute;
+      top: 45vh;
+      left: 50vw;
+      transform: translate(-50%, -45%);
+       overflow: hidden; 
+       white-space: nowrap; 
+       border-right: 2px solid; /* Optional cursor */
+       width: 0;
+       animation: typing;
+       animation-duration: 10s;
+       animation-iteration-count: 1;
+       animation-direction: forwards ease-in-out;
+    }
+    p2{
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+    }
+    p3{
+      position: absolute;
+      top: 55vh;
+      left: 50vw;
+      transform: translate(-50%, -55%);
+    }
+
     .text{
       font-family: 'Fondamento', cursive;
-      font-size: 20px;
+      font-size: 30px;
       color: white;
       z-index: 1000;
       text-shadow: 
@@ -41,6 +68,11 @@
        .4px -.4px 0 #010760,
       -.4px  .4px 0 #010760,
        .4px  .4px 0 #010760;
+      
     }
 
+  @keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
     </style>
