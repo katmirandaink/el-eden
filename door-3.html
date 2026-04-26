@@ -28,9 +28,11 @@
       <p9>Waiting to be excavated and remembered</p9>
     </div>
 
-    <img src="Images/NanaDesign_SunandMoon.PNG"></img>
+    <img src="Images/NanaDesign_SunandMoon.PNG" class="sunandmoon"></img>
 
-    <video src="Videos/Kerhonson_AwostingFallsRiver_1_Trimmed.mp4"></video>
+    <video 
+    autoply muted loop
+    src="Videos/Kerhonkson_AwostingFallsRiver_TrimmedShort.mp4"></video>
 
   </body>
 
@@ -107,5 +109,25 @@
       -.4px  .4px 0 #010760,
        .4px  .4px 0 #010760;
     }
+
+    .sunandmoon{
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      width: 500px;
+      height: auto;
+    }
+
+    video{
+      position: absolute;
+      top: 30px;
+      left: 900px;
+      z-index: 10;
+      width: 350px;
+      height: auto;
+    }
+    
 
     </style>
