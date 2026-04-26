@@ -16,9 +16,9 @@
 
   <body>
     <div class="text">
-      <p1>...So I write these words here</p1>
-      <p2>A proclamation of my inheritance</p2>
-      <p3>And my future</p3>
+        <p1 class="first">...So I write these words here</p1>
+        <p2 class="second">A proclamation of my inheritance</p2>
+        <p3 class="third">And my future</p3>
   </div>
 
     </body>
@@ -31,27 +31,21 @@
 
     }
 
-    p1{
+    .first{
       position: absolute;
       top: 45vh;
       left: 50vw;
       transform: translate(-50%, -45%);
-       overflow: hidden; 
-       white-space: nowrap; 
-       border-right: 2px solid; /* Optional cursor */
-       width: 0;
-       animation: typing;
-       animation-duration: 10s;
-       animation-iteration-count: 1;
-       animation-direction: forwards ease-in-out;
     }
-    p2{
+
+    .second{
       position: absolute;
       top: 50vh;
       left: 50vw;
       transform: translate(-50%, -50%);
-    }
-    p3{
+}
+
+    .third{
       position: absolute;
       top: 55vh;
       left: 50vw;
@@ -68,11 +62,6 @@
        .4px -.4px 0 #010760,
       -.4px  .4px 0 #010760,
        .4px  .4px 0 #010760;
-      
-    }
+          }
 
-  @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
     </style>
