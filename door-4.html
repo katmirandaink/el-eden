@@ -28,10 +28,25 @@
     <img src="Images/BusteloHands2_2.png" class="bustelo2"></img>
     <img src="Images/LetterDesign.png" class="letterdesign"></img>
     <img src="Images/NanaHouse_December2025_INanaHouse_December2025_IP 4.jpg" class="couchsidedesign"></img>
+  
+
+    <img src="Images/NanaDesign_CouchDesign3.png" class="couch1"></img>
+    <img src="Images/NanaDesign_CouchDesign3.png" class="couch2"></img>
+    <img src="Images/NanaDesign_CouchDesign3.png" class="couch3"></img>
+    <img src="Images/NanaDesign_CouchDesign3.png" class="couch4"></img>
 
     <video 
     autoplay loop muted 
     src="Videos/Kerhonson_AwostingFalls_3_Trimmed.mp4"></video>
+
+  <!-- original code
+    <div class="card card-floating">
+    <i class="icon">🚀</i>
+    <h3>Floating Card</h3>
+    <p>Up-down floating effect with premium smooth animation.</p>
+  </div>
+  -->
+
 
   </body>
 
@@ -57,8 +72,8 @@
     p1{
     position: absolute; 
     top: 1.5vh;
-    left: 5vw;
-    z-index: 1002;
+    left: 3vw;
+    z-index: 1008;
 
     }
 
@@ -66,7 +81,7 @@
       position: absolute;
       top: 6.5vh;
       left: 38vw;
-      z-index: 1002;
+      z-index: 1008;
 
     }
 
@@ -74,7 +89,7 @@
       position: absolute;
       top: 18vh;
       left: 74vw;
-      z-index: 1002;
+      z-index: 1008;
 
     }
 
@@ -82,7 +97,7 @@
       position: absolute;
       top: 50vh;
       left: 16vw;
-      z-index: 1002;
+      z-index: 1008;
 
     }
 
@@ -90,7 +105,7 @@
       position: absolute;
       top: 67vh;
       left: 32vw;
-      z-index: 1002;
+      z-index: 1008;
 
     }
 
@@ -98,7 +113,7 @@
       position: absolute;
       top: 85vh;
       left: 45vw;
-      z-index: 1002;
+      z-index: 1008;
 
     }
 
@@ -110,7 +125,7 @@
       height: auto;
       z-index:3;
       transform:rotate(-25deg);
-      opacity:0.9
+      opacity:0.9;
     }
 
     .bustelo2{
@@ -121,7 +136,7 @@
       height: auto;
       z-index: 3;
       transform:rotate(-18deg);
-      opacity: 0.85;
+      opacity: 0.8;
     }
 
     video{
@@ -131,6 +146,7 @@
       top: 105px;
       left: 280px;
       z-index: 1;
+      opacity:0.95;
     }
 
     .letterdesign{
@@ -149,7 +165,87 @@
     left: 20px;
     height:650px;
     width: auto;
-    transform:scaleX(-1)
+    transform:scaleX(-1);
+    opacity: 0.9;
     }
 
+    .couch3{
+      width: 150px;
+      height:auto;
+      top: 65vh;
+      left: 18vw;
+      position: absolute;
+      z-index: 1007;
+      animation: float 3.5s infinite ease-in-out;
+    }
+
+    .couch2{
+      width: 300px;
+      height:auto;
+      top: 60vh;
+      left: 77.5vw;
+      position: absolute;
+      z-index: 1007;
+      animation: float 3.5s infinite ease-in-out;
+    }
+
+    .couch1{
+      width: 105px;
+      height:auto;
+      top: 2vh;
+      left: 89.5vw;
+      position: absolute;
+      z-index: 1007;
+      animation: float 3.5s infinite ease-in-out;
+    }
+
+    .couch4{
+      width: 75px;
+      height:auto;
+      top: 9vh;
+      left: 5vw;
+      position: absolute;
+      z-index: 1007;
+      animation: float 3.5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/* -----------------------------------
+   CARD 6 — FLOATING SMOOTH
+
+   .card-floating {
+  border: 2px solid #0ff;
+  animation: float 3.5s infinite ease-in-out;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.card-floating:hover {
+  box-shadow: 0 0 30px #0ff;
+}
+----------------------------------- */
+
+
+    
     </style>
