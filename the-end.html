@@ -21,6 +21,9 @@
         <p3 class="third">And my future</p3>
   </div>
 
+  <img src="Images/NanaDesign_Couch.png" class="nanacouch1"></img>
+  <img src="Images/NanaDesign_Couch.png" class="nanacouch2"></img>
+
     </body>
 
      <style>
@@ -31,23 +34,43 @@
 
     }
 
+    .nanacouch1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%; /* Optional: ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other content */
+    filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/ }
+
+  .nanacouch2{
+    position: absolute;
+    top: 90vh;
+    left: 0px;
+    width: 100%; /* Optional: ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other content */
+    filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+    transform: translate(0%, -50%) scaleY(-1)
+  }
+  
     .first{
       position: absolute;
-      top: 45vh;
+      top: 55vh;
       left: 50vw;
       transform: translate(-50%, -45%);
     }
 
     .second{
       position: absolute;
-      top: 50vh;
+      top: 60vh;
       left: 50vw;
       transform: translate(-50%, -50%);
 }
 
     .third{
       position: absolute;
-      top: 55vh;
+      top: 65vh;
       left: 50vw;
       transform: translate(-50%, -55%);
     }

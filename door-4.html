@@ -176,7 +176,11 @@
       left: 18vw;
       position: absolute;
       z-index: 1007;
-      animation: float 3.5s infinite ease-in-out;
+    }
+
+    .couch3:hover{
+      animation: float 2.25s infinite ease-in-out;
+      filter: brightness(1.5) contrast(1.1) drop-shadow(2px 2px 4px rgb(11, 146, 11));
     }
 
     .couch2{
@@ -186,7 +190,11 @@
       left: 77.5vw;
       position: absolute;
       z-index: 1007;
-      animation: float 3.5s infinite ease-in-out;
+    }
+
+    .couch2:hover{
+      animation: float 2.5s infinite ease-in-out;
+      filter: brightness(1.5) contrast(1.1) drop-shadow(2px 2px 4px rgb(196, 199, 9));
     }
 
     .couch1{
@@ -196,8 +204,13 @@
       left: 89.5vw;
       position: absolute;
       z-index: 1007;
-      animation: float 3.5s infinite ease-in-out;
     }
+
+    .couch1:hover{
+      animation: float 2s infinite ease-in-out;
+      filter: brightness(1.5) contrast(1.1) drop-shadow(2px 2px 4px rgb(255, 255, 255));
+    }
+    
 
     .couch4{
       width: 75px;
@@ -206,15 +219,19 @@
       left: 5vw;
       position: absolute;
       z-index: 1007;
-      animation: float 3.5s infinite ease-in-out;
 }
+
+    .couch4:hover{
+      animation: float 1.8s infinite ease-in-out;
+      filter: brightness(1.5) contrast(1.1) drop-shadow(2px 2px 4px rgb(254, 0, 0));
+    }
 
 @keyframes float {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-20%);
   }
   100% {
     transform: translateY(0);
@@ -224,7 +241,7 @@
 
 
 /* -----------------------------------
-   CARD 6 — FLOATING SMOOTH
+   CARD 6 — FLOATING SMOOTH - original code
 
    .card-floating {
   border: 2px solid #0ff;
