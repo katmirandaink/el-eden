@@ -25,23 +25,26 @@
       <p6>Ashes that spread its memory</p6>
       <p7>Across winds and seas</p7>
       <p8>Until they crystallize into fossils</p8>
-      <p9>Waiting to be excavated and remembered</p9>
+      <p9>Waiting to be excavated and remembered...</p9>
     </div>
 
     <img src="Images/NanaDesign_SunandMoon.PNG" class="sunandmoon"></img>
+    <img src="Images/DandelionSeeds_Illustration.png" class="dandelionseeds"></img>
 
   <div class="floortiles">
-    <img src="Images/NanaDesign_FloorTile.png" class="floortile1"></img>
-    <img src="Images/NanaDesign_FloorTile.png" class="floortile2"></img>
-    <img src="Images/NanaDesign_FloorTile.png" class="floortile3"></img>
-    <img src="Images/NanaDesign_FloorTile.png" class="floortile4"></img>
+    <img src="Images/GrandmaDesign_Couch.png" class="floortile1"></img>
+    <img src="Images/GrandmaDesign_Couch.png" class="floortile2"></img>
+    <img src="Images/GrandmaDesign_Couch.png" class="floortile3"></img>
+    <img src="Images/GrandmaDesign_Couch.png" class="floortile4"></img>
   </div>
 
     <img src="Images/Kerhonksen_Winter_2026_11.jpg" class="trunk"></img>
-   
+     <img src="Images/Kerhonksen_Winter_2026_38.jpg" class="ferns"></img>
 
     <img src="Images/12_edited.jpeg" class="toybox"></img>
     <img src="Images/IMG_6153.jpg" class="lake"></img>
+    <img src="Images/IMG_6153_copy.jpg" class="mlake"></img>
+
 
    <video  
     
@@ -61,19 +64,20 @@
 
     }
 
-    p1{top: 3vh; left: 3vw; position: absolute;}
-    p2{top: 6vh; left: 6vw; position: absolute;}
-    p3{top: 90vh; left: 90vw; position: absolute;}
-    p4{top: 110vh; left: 110vw; position: absolute;}
-    p5{top: 140vh; left: 140vw; position: absolute;}
-    p6{top: 170vh; left: 170vw; position: absolute;}
-    p7{top: 200vh; left: 200vw; position: absolute;}
-    p8{top: 230vh; left: 230vw; position: absolute;}
-    p9{top: 250vh; left: 250vw; position: absolute;}
+    p1{top: 1.5vh; left: 3vw; position: absolute; z-index: 1000; filter: brightness(1.2); }
+    p2{top: 10vh; left: 19vw; position: absolute; z-index: 1000; filter: brightness(1.2); }
+    p3{top: 44vh; left: 7vw; position: absolute; z-index: 1000; filter: brightness(1.25); }
+    p4{top: 61vh; left: 62vw; position: absolute; z-index: 1000; filter: brightness(1.25); }
+    p5{top: 69vh; left: 50vw; position: absolute; z-index: 1000; filter: brightness(1.25); }
+    p6{top: 91vh; left: 91vw; position: absolute; z-index: 1000; filter: brightness(1.2); }
+    p7{top: 35vh; left: 120vw; position: absolute; z-index: 1000; filter: brightness(1.2); }
+    p8{top: 60vh; left: 140vw; position: absolute; z-index: 1000; filter: brightness(1.2); }
+    p9{top: 7vh; left: 160vw; position: absolute; z-index: 1000; filter: brightness(1.2); }
+
 
     .text{
       font-family: 'Fondamento', cursive;
-      font-size: 25px;
+      font-size: 26px;
       color: white;
       z-index: 1000;
       text-shadow: 
@@ -85,12 +89,25 @@
 
     .sunandmoon{
       position: absolute;
-      top: 33vh;
-      left: 18vw;
+      top: 0vh;
+      left: 79vw;
       transform: translate(-50%, -50%);
-      z-index: 100;
-      width: 350px;
+      z-index: 500;
+      width: 300px;
       height: auto;
+      transform: rotate(-10deg) scaleX(-1);
+      filter: drop-shadow(0 0 6px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+    }
+
+    .dandelionseeds{
+      position: absolute;
+      top: 48vh;
+      left: 79vw;
+      z-index: 500;
+      width: 200px;
+      height: auto; 
+      transform: rotate(-18deg);
     }
 
     video{
@@ -98,73 +115,97 @@
       top: 40px;
       left: 900px;
       z-index: 10;
-      width: 350px;
+      width: 375px;
       height: auto;
     }
 
     .trunk{
       position: absolute;
-      top: 50px;
-      left: 1200px;
-      z-index: 1;
-      width: 200px;
+      top: 200px;
+      left: 740px;
+      z-index: 15;
+      width: 225px;
       height: auto;
     }
 
     .toybox{
       position: absolute;
-      top: 280px;
-      left: 180px;
+      top: 350px;
+      left: 240px;
       z-index: 1;
-      width: 600px;
+      width: 525px;
       height: auto;
-      opacity: 0.5;
+      opacity: 0.7;
     } 
 
     .lake{
       position: absolute;
-      top: 170px;
-      left: -120px;
+      top: 2020px;
+      left: -420px;
       z-index: 0;
-      width: 900px;
+      width: 1400px;
       height: auto;
-      opacity: 0.5;
+      opacity: 0.8;
+    }
+
+    .mlake{
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      z-index: 0;
+      width: 990px;
+      height: auto;
+      opacity: 0.9;
+    }
+
+    .ferns{
+      position: absolute;
+      top: 500px;
+      left: 1600px;
+      z-index: 10;
+      width: 250px;
+      height: auto;
+    
     }
 
     .floortile1{
       position: absolute;
-      top: 100px;
-      left: 20px;
+      top: 10vh;
+      left: 3vw;
       z-index: 1000;
-      width: 100px;
+      width: 140px;
       height: auto;
+      filter: brightness(1.2); 
     }
     
     .floortile2{
       position: absolute;
-      top: 100px;
-      left: 120px;
+      top: 425px;
+      left: 425px;
       z-index: 1000;
-      width: 100px;
+      width: 55px;
       height: auto;
+      filter: brightness(1.2);
     }
 
     .floortile3{
       position: absolute;
-      top: 100px;
-      left: 220px;
+      top: 87vh;
+      left: 65vw;
       z-index: 1000;
-      width: 100px;
+      width: 90px;
       height: auto;
+      filter: brightness(1.2);  
     }
 
     .floortile4{
       position: absolute;
-      top: 100px;
-      left: 320px;
+      top: 120vh;
+      left: 120vw;
       z-index: 1000;
       width: 100px;
       height: auto;
+      filter: brightness(1.2);
     }
 
     .floortile1:hover{
@@ -215,20 +256,20 @@
             animation-timing-function: ease-out;
   }
   10% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
   17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    -webkit-transform: scale(0.96);
+            transform: scale(0.96);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
   33% {
-    -webkit-transform: scale(0.93);
-            transform: scale(0.93);
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
