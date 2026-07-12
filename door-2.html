@@ -110,12 +110,29 @@ video{
 }
 
 .flowers{
-  width: 270px;
+  width: 263px;
   height: auto;
-  top: 157px;
-  left: 1488px;
+  top: 170px;
+  left: 1495px;
   position: absolute;
   transform: rotate(2deg);
+}
+
+.gate1{
+  width: 125px;
+  height: auto;
+  top: 488px;
+  left: 1020px;
+  position: absolute;
+  z-index: 11;
+  transform: rotate(-1deg);
+  filter: brightness(1.2);
+}
+
+.gate1:hover{
+  filter: brightness(1.5) contrast(1.1) drop-shadow(2px 2px 2px rgb(255, 0, 136)); /* horizontal, vertical, blur-radius, color; */
+  transform: rotate(360deg); 
+  transition: transform .5s ease-in-out;
 }
 
 .gate3{
@@ -134,13 +151,14 @@ video{
 }
 
 .gate2{
-  width: 250px;
+  width: 210px;
   height: auto;
-  top: 900px;
-  left: 100px;
+  top: 1050px;
+  left: 350px;
   position: absolute;
   z-index: 11;
-  transform: rotate(-7deg)
+  transform: rotate(-7deg);
+  filter: brightness(1.2);
 }
 
 .gate2:hover{
@@ -165,29 +183,12 @@ video{
   transition: transform .5s ease-in-out;
 }
 
-.gate1{
-  width: 125px;
-  height: auto;
-  top: 488px;
-  left: 1020px;
-  position: absolute;
-  z-index: 11;
-  transform: rotate(-1deg);
-  filter: brightness(1.2);
-}
-
-.gate1:hover{
-  filter: brightness(1.5) contrast(1.1) drop-shadow(2px 2px 2px rgb(255, 0, 136)); /* horizontal, vertical, blur-radius, color; */
-  transform: rotate(360deg); 
-  transition: transform .5s ease-in-out;
-}
-
 p1{
 
     font-family: 'Fondamento', cursive;
     font-size: 30px;
     color: #ffffff;
-    top: 38px;
+    top: 50px;
     left: 730px;
     position: absolute;
     z-index: 20;
@@ -196,7 +197,7 @@ p1{
      .4px -.4px 0 #010760,
     -.4px  .4px 0 #010760,
      .4px  .4px 0 #010760;
-     filter: brightness(1.2);
+     filter: brightness(1.25);
       white-space: nowrap;
 }
 
