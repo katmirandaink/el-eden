@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...into the future...</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <div class="text">
+        <p1 class="first">...So I write these words here</p1>
+        <p2 class="second">A proclamation of my inheritance</p2>
+        <p3 class="third">And my future</p3>
+  </div>
+
+  <img src="Images/NanaDesign_Couch.png" class="nanacouch1"></img>
+  <img src="Images/NanaDesign_Couch.png" class="nanacouch2"></img>
+
+    </body>
+
+     <style>
+
+     body{ 
+
+    background-color: #010760;
+
+    }
+
+    .nanacouch1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%; /* Optional: ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other content */
+    filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/ }
+
+  .nanacouch2{
+    position: absolute;
+    top: 90vh;
+    left: 0px;
+    width: 100%; /* Optional: ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other content */
+    filter: drop-shadow(0 0 30px #0d00fe); /* horizontal, vertical, blur-radius, color;
+  I like this color:#0d00fe*/  
+    transform: translate(0%, -50%) scaleY(-1)
+  }
+  
+    .first{
+      position: absolute;
+      top: 55vh;
+      left: 50vw;
+      transform: translate(-50%, -45%);
+    }
+
+    .second{
+      position: absolute;
+      top: 60vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+}
+
+    .third{
+      position: absolute;
+      top: 65vh;
+      left: 50vw;
+      transform: translate(-50%, -55%);
+    }
+
+    .text{
+      font-family: 'Fondamento', cursive;
+      font-size: 30px;
+      color: white;
+      z-index: 1000;
+      text-shadow: 
+      -.4px -.4px 0 #010760,  
+       .4px -.4px 0 #010760,
+      -.4px  .4px 0 #010760,
+       .4px  .4px 0 #010760;
+          }
+
+    </style>
